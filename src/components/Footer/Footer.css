@@ -43,6 +43,10 @@
     background-color: grey;
     border: none;
 }
+.footer-logo {
+    width: 200px;
+    margin-right: 15px;
+}
 
 @media(max-width:750px) {
     .footer-content{
