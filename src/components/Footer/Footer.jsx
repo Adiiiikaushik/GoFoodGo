@@ -7,7 +7,7 @@ const Footer = ()=> {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img className='footer-logo' src={assets.logo} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta modi quae at velit, harum ipsa explicabo incidunt, esse alias corporis recusandae cum quod quam maxime rerum nam, doloremque iusto eum.</p>
+                <p>Choose your diverse menu featuring a delectable arry of dishes crafted with the finest ingredients and culinary expertise.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
@@ -32,7 +32,7 @@ const Footer = ()=> {
             </div>
         </div>
         <hr />
-        <p className='footer-copyright'>Copyright 2024 © GoFoodGo.com - All Right Reserved</p>
+        <p className='footer-copyright'>Copyright 2024 © go-food-go.vercel.app - All Right Reserved</p>
     </div>
   )
 }

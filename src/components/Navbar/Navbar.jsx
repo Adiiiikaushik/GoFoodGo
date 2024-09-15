@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 const Navbar = ({setShowLogin}) => {
 
-    const[menu,setMenu] = useState("menu")
+    const[menu,setMenu] = useState("")
     const {getTotalCartAmount} = useContext(StoreContext);
   return (
     <div className='navbar'>
