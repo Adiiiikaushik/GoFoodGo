@@ -6,11 +6,25 @@ import { StoreContext } from '../../context/StoreContext'
 const Navbar = ({setShowLogin}) => {
 
     const[menu,setMenu] = useState("")
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
     const {getTotalCartAmount} = useContext(StoreContext);
+    
+
+    // const toggleMenu = () => {
+    //     setIsMenuOpen(!isMenuOpen);
+    //   };
+
+
   return (
     <div className='navbar'>
         <Link to='/'><img src={assets.logo} alt="" className='logo' /></Link>
-        <ul className="navbar-menu">
+{/* 
+        <div className='navbar-hamburger'>
+        <img src={assets.hamburger_icon} alt='Menu' onClick={toggleMenu} />
+        </div> */}
+
+        {/* <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}> */}
+        <ul className='navbar-menu'>
         <Link to='/' onClick={() => setMenu("home")} className={menu==="home"?"active":""}>Home</Link>
             <a href='#explore-menu' onClick={() => setMenu("menu")} className={menu==="menu"?"active":""}>Menu</a>
             <a href='#app-download' onClick={() => setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-App</a>
