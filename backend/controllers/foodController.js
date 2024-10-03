@@ -32,4 +32,18 @@ const listFood = async(req,res) => {
     }
 }
 
-export {addFood,listFood}
+//remove food
+
+const removeFood = async(req,res) => {
+  try {
+    
+  } catch (error) {
+    
+  }
+}
+
+
+
+
+
+export {addFood,listFood,removeFood}
